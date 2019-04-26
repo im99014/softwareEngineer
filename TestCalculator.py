@@ -41,6 +41,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_float_divided(self):
         self.assertEqual(calculator.divided(5.4, 3), 1.8)
+        
+    def test_float_divided(self):
+        self.assertEqual(calculator.divided(6.0, 3), 2.0)
 
 if __name__ == '__main__':
     unittest.main()
