@@ -22,3 +22,13 @@ script: true
  # Another command/method to run tests
 script: 
   - python TestCalculator.py
+deploy:
+  provider: heroku
+  api_ket:
+    secure: 9533619f-c2d8-495f-ab2c-a84867e475a7
+  app: charles-test
+  on:
+    repo: im99014/softwEngineer
+  run:
+    "web: gunicorn app_run: app"
+  
